@@ -1,5 +1,4 @@
 <script>
-  import image from '../assets/images/flower.png'
   let value, isSubmitted = false
 
   function handleSubmit() {
@@ -11,7 +10,6 @@
 
 <section>
   <form on:submit|preventDefault={handleSubmit}>
-    <!-- <img src={image} alt="flower"> -->
     <div>
       {#if isSubmitted}
          <span class="thanks">Thank You!</span>
