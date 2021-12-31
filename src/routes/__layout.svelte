@@ -12,7 +12,7 @@
 	<slot />
 </main>
 
-<EmailSubmit />
+<!-- <EmailSubmit /> -->
 
 <Footer />
 

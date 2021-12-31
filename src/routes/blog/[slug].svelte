@@ -1,8 +1,7 @@
 <script context="module">
   import client from '$lib/integrations/sanity/client'
   export async function load(ctx) {
-    const {slug} = ctx.page.params
-    console.log(slug)
+    const {slug} = ctx.params
     const query = /* groq */ `*[_type == 'post' && slug.current == '${slug}'][0]{
       title,
       description,

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	console.log('page', page);
 </script>
 
 <header>
@@ -14,9 +15,9 @@
 
 	<nav>
 		<ul>
-			<li class:active={$page.path === '/blog'}><a sveltekit:prefetch href="/blog">blog</a></li>
-			<li class:active={$page.path === '/food'}><a sveltekit:prefetch href="/food">food</a></li>
-			<li class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">about</a></li>
+			<li class:active={$page.url.pathname === '/blog'}><a sveltekit:prefetch href="/blog">blog</a></li>
+			<li class:active={$page.url.pathname === '/food'}><a sveltekit:prefetch href="/food">food</a></li>
+			<li class:active={$page.url.pathname === '/about'}><a sveltekit:prefetch href="/about">about</a></li>
 		</ul>
 	</nav>
 
