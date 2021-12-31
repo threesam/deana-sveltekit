@@ -5,7 +5,6 @@
       ...
     }`
     const data = await client.fetch(deana)
-    console.log('data', data);
     return {
       props: { data }
     }

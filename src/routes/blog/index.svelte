@@ -1,8 +1,6 @@
 <script context="module">
   import client from '$lib/integrations/sanity/client'
   export async function load(ctx) {
-    console.log('ctx', ctx);
-    
     const posts = /* groq */ `*[_type == 'post']{
       title,
       description,
@@ -24,7 +22,6 @@
 
 <script>
   export let data
-  console.log('data', data);
 </script>
 
 <h1>Posts</h1>

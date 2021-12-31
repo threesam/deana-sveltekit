@@ -24,7 +24,6 @@ import Banner from "$lib/components/Banner.svelte";
 import PortableText from "@portabletext/svelte";
 
   export let data
-  console.log('data', data);
 </script>
 
 <Banner title={data.title} image={data.image} alt={data.alt} />
